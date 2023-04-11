@@ -3,24 +3,30 @@ Input : String  = “jtdfoundation”     K = 3;
 
 */
 
-public class Main
- {
-    public static void main(String[] args)
-     {
-        String str = "jtdfoundation";
-        int k = 3;
-        printSubstrings(k, str);
-    }
-
-    public static void printSubstrings(int k, String str)
-    {
-        for (int i = 0; i <= str.length()-3; i++) 
-        {
-            String substr = str.substring(i,k+i);
-            
-            System.out.println(substr);
-        }
-    }
+class main
+{
+	public static void main(String[]args)
+	{
+		String str="jtdfoundation";
+		int k=3;
+		for(int i=0;i<str.length();i++)
+		{
+			for(int j=i;j<str.length();j++)
+			{
+				String substr="";
+				for(int m=i;m<=j;m++)
+				{
+					substr+=str.charAt(m);
+				}
+				if(substr.length()==k)
+				{
+					System.out.println(substr);
+				}
+			
+			}
+		
+		}
+	
+	
+	}
 }
-
-
