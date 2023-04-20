@@ -11,17 +11,20 @@ class stackoperation
 		Scanner input=new Scanner(System.in);
 		int[] stack=new int[100];
 		int peek=-1;
+		System.out.println("enter number of operation--");
 		
 		int numofoperation=input.nextInt();
 		
 		for(int i=0;i<numofoperation;i++)
 		{
+			System.out.println("enter type of operation--");
 			String operation=input.next();
 			
 			if(operation.equals("push"))
 			{
 				if(peek<=100)
 				{
+					System.out.println("enter value to push");
 					int value=input.nextInt();
 					peek+=1;
 					
