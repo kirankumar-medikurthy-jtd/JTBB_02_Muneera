@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>switch</title>
+	</head>	
+	<style>
+		.box{
+			height:300px;
+			width:300px;
+			border:1px solid black;
+			border-radius:100%;
+			margin-left:750px;
+			background-color
+		}
+		.on{
+			padding:20px;
+			border-radius:10px;
+			margin-left:750px;
+			margin-top:20px;
+		}
+		.of{
+			padding:20px;
+			border-radius:10px;
+			margin-left:100px;
+			margin-top:20px;
+		}	
+	</style>
+	
+	<body>
+	  <div>
+		<div>
+			<div class="box"></div>
+		</div>
+		<button class="on">turnon</button>
+		
+	
+	</div>
+	</body>
+	
+	<script>
+		let bulb = document.querySelector(".box");
+		let turnon = document.querySelector(".on");
+		let flag=false;
+		turnon.onclick = function() {
+			flag = !flag;
+			if(flag) {
+				bulb.style.backgroundColor = "red"; 
+				turnon.innerText= "switchoff";
+			}else{
+				bulb.style.backgroundColor = "yellow";
+				turnon.innerText= "switchon";
+			}
+		}
+		console.log(turnon,bulb)
+		
+		
+		
+		
+	</script>
+</html>

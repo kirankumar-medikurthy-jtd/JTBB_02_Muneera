@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>bulb assignment</title>
+	<style>
+		.main
+		{
+			width : 300px;
+			height : 300px;
+			border : 1px solid black;
+			margin-left : 550px;
+			margin-top : 150px;
+			background-color : aqua;
+		}
+		.circle
+		{
+			width : 150px;
+			height : 150px;
+			border : 1px solid black;
+			border-radius : 100px;
+			margin-left : 70px;
+			margin-top : 60px;
+			background : white;
+		}
+		.click 
+		{
+			padding : 10px 30px;
+			border : 1px solid black;
+			margin-left : 105px;
+			margin-top : 20px;
+			color : black;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class = "main">
+			<div class = "circle"></div> 
+			<button type = "text" class = "Click">click</button>
+		</div>
+	<div>
+	
+</body>
+<script>
+     let bulb = document.querySelector(".circle");
+     let On = document.querySelector(".Click");
+      let flag  = false;
+      On.onclick = function() 
+      {
+	      	flag = !flag;
+	      	if(flag)
+	      	{
+			bulb.style.backgroundColor = "yellow";
+	      	}
+	      	else 
+	      	{
+	      		 bulb.style.backgroundColor = "white";
+	      	}
+      }
+      
+      
+      
+      
+      
+</script>
+</html>

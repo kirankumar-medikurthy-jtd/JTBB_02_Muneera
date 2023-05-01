@@ -1,0 +1,136 @@
+<!--<html>
+	<head>
+		<title><cards</title>
+	</head>
+	<style>
+		 h1{
+		 	margin-left:750px;
+		 	color:purple;
+		 
+		   }
+		
+		
+		</style>
+	
+	<body>
+		<div>
+		<h1>Cards play</h1>
+		</div>
+		
+		<div Id = On>
+			<button onclick = "clickMe()">cilck me</button>
+		</div>
+		<div class="cards"></div>
+	</body>
+	<script>
+	
+		function clickMe()
+		{
+			let  flex = document.querySelector("#On");
+			flex.innerHTML="";
+		}
+		
+     		let cards = document.getElementById("cards");
+     		
+     		for(let i=1; i <=60; i++)
+     		{
+     			let tag =printCards(i);
+     		    		cards.append(tag);
+     		}    
+       }		  
+		
+	</script>
+</html>-->
+
+
+<DocTYPE HTML>
+    <html> 	
+     <head>
+     	<title>cardsPlay</title>
+     	<style>
+     		h1{
+     			text-align:center;
+     			color:blue;
+     		}
+     		
+     		.card
+     		{
+     			height:10px;
+     			width:100px;
+     			border:solid 1px black;
+     			background-color:skyblue;
+     			margin-right:20px;
+     			padding:40px 30px 40px 20px;
+     			
+     		
+     		}
+     		#cards
+     		{
+     			display:flex;
+     			align-items:center;
+     			flex-wrap:wrap;
+     			flex-direction:row;
+     			margin-top:20px;
+     		 
+     		}
+     		#add
+     		{
+     			display:flex;
+     		
+     		}
+     		
+     		
+     		
+     	
+     	</style>
+     </head>
+     <body>
+     
+           <div >
+     	        <h1 id="head">Cards Play :</h1>
+           </div>
+           
+           <div id="style">
+           
+               <button  onclick ="clickMe()">clickMe</button>
+               
+           </div>
+           
+          <div Id="add">
+          
+          	<div Id="cards"></div>
+          	
+          </div>  	
+     
+     <script>
+     	
+     	function clickMe() {
+     		let text = document.getElementById("style");
+     		text.innerHTML ="";
+     		
+     		let cards = document.getElementById("cards");
+     		
+     		for(let i=1; i <=60; i++){
+     		let tag =printCards(i);
+     		    cards.append(tag);
+     		}    
+       }		  
+     function printCards(i){
+     		let color = document.createElement("div");
+     		color.innerHTML = i ;
+     		color.style.margin="10px 10px";
+     		color.setAttribute("class", "card")
+     		color.setAttribute("onClick", `displayNumber(${i})`)
+     		return color		
+     	}
+     		
+ 	function displayNumber(i){
+ 		let head = document.getElementById("head");
+ 		head.innerHTML= "Cards play: "+ i ;
+ 	}
+     
+     
+     </script>
+     </body>
+     
+   </html>

@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>assignment</title>
+	</head>
+	<style>
+		.flex{
+			height:300px;
+			width:600px;
+			margin : auto;
+			border:2px solid black;
+			background-color:yellow;
+			
+		
+		}
+		.text{
+			font-size:30px;
+			background-color:pink;
+			margin-top:60px;	
+			height:70px;
+			width:450px;
+			margin : auto;
+		        margin-top:50px;
+			
+			
+		}
+		.On{
+			padding:15px;
+			border-radius:10px;
+			margin-left:50px;
+			margin-top:20px;
+			
+		}
+		.color{
+			padding:15px;
+			border-radius:10px;
+			margin-left:50px;
+			margin-top:20px;
+		
+		}
+		.color2{
+			padding:15px;
+			border-radius:10px;
+			margin-left:50px;
+			margin-top:20px;
+		}
+		.color3{
+			padding:15px;
+			border-radius:10px;
+			margin-left:50px;
+			margin-top:20px;
+		
+	
+	</style>
+	<body>
+		<div class="flex">
+			<div>
+			<div class="text">Hello world!</div>
+			<button class="On">click</button>
+			<button class="color">click me</button>
+			<button class="color2">clickhere</button>
+			<button class="color3">click remove</button>
+			</div>
+		</div>
+			
+			
+			
+		
+	
+	
+	
+	</body>
+	<script>
+		let bulb = document.querySelector(".text");
+		let color = document.querySelector(".On");
+		let text = document.querySelector(".color");
+		let text2 = document.querySelector(".color2");
+		let text3 = document.querySelector(".color3");
+     
+		 
+		
+      		color.onclick = function() 
+      		{
+	      	
+			bulb.style.color = "red";
+			bulb.style.backgroundColor ="green";
+		 }		
+		 
+		 text.onclick = function()
+		 {
+		  bulb.innerText = "welcome to software engineer filed";
+		 
+		 }
+		 text2.onclick = function()
+		 {
+		 
+		 	bulb.style.color = "blue";
+		 }
+		 text3.onclick = function()
+		 {
+		 
+		 	bulb.remove();
+		 }
+	    	 
+	    	 
+	   </script>
+</html>
+
+
+
+
+
